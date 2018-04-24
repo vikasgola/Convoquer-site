@@ -17,7 +17,7 @@ firebase.database().ref('resultsite').on('child_added', function(snap){
     k = k + "</div><hr class=\"line\" style=\"height: 1px;border: none;background-color: black;width: 50%\" >";
     t.innerHTML = t.innerHTML+ k;
 
+    document.getElementById("loading").style.display = "none";
 
-})
+});
 
- document.getElementById("loading").style.display = "none";
